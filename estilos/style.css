@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+*
+{
+    box-sizing: border-box;
+}
+
 body
 {
     background-color: #5f2c82;
@@ -14,9 +19,22 @@ main
     width: 100vw;
 }
 
-div#login
+section#login
 {
     position: absolute;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+
+}
+
+section#login > div#imagem
+{
+    background: #5f2c82 url(../imagens/);
+    height: 200px;
 }
